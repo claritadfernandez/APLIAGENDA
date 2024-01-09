@@ -29,7 +29,7 @@
       <tbody>
         <?php
 
-        $conexion = mysqli_connect(getenv('MYSQL_HOST'), getenv('MYSQL_USER'), getenv('MYSQL_PASSWORD'), "BASEDATOS");
+        $conexion = mysqli_connect("34.27.162.144", "root", "123456", "BASEDATOS");
 
 $cadenaSQL = "SELECT agenda.nombre, agenda.apellido, agenda.direccion, agenda.telefijo, agenda.telefmovi, agenda.email, distrito.nombred
 FROM agenda
